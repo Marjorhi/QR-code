@@ -3,7 +3,7 @@ script.src =
   "https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js";
 document.head.appendChild(script);
 
-const qrcode = document.querySelectorAll(".qrcode-cont button");
+const qrcode = document.querySelectorAll(".qr-code button");
 qrcode.forEach((el, index) => {
   el.addEventListener("click", handleOnClickQrCode);
 });
