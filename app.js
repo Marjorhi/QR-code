@@ -14,3 +14,13 @@ function handleOnClickQrCode(e) {
   if (divCont.children[0].value == "") return;
 
   divCont.children[2].innerHTML = "";
+
+  var qrcode = new QRCode(divCont.children[2], {
+    text: divCont.children[0].value,
+    width: 180,
+    height: 180,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H,
+  });
+}
