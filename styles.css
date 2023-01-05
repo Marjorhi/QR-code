@@ -1,0 +1,12 @@
+@import url("https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css");
+
+.qr-code * {
+  box-sizing: content-box;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
