@@ -27,3 +27,51 @@
     border-color: #5549f1;
   }
   
+  .qr-code button {
+    border: none;
+    width: 180px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1em;
+    padding: 15px 25px;
+    border-radius: 7px;
+    background-color: #5549f1;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .qr-code button:hover {
+    background-color: #766df4;
+  }
+  
+  .qr-code button i {
+    font-size: 1.2em;
+  }
+  
+  .qr-code > .qrcode {
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    text-align: center;
+    position: relative;
+    outline: 1px dashed rgb(0, 0, 0, 0.8);
+    outline-offset: -12px;
+  }
+  
+  .qr-code > .qrcode span {
+    content: "Your QR Code will be generate here";
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
