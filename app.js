@@ -12,3 +12,5 @@ function handleOnClickQrCode(e) {
   var divCont = e.target.parentNode;
 
   if (divCont.children[0].value == "") return;
+
+  divCont.children[2].innerHTML = "";
